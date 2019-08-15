@@ -19,7 +19,7 @@ Make sure to follow instructions for installing PyTorch with GPU support if you 
 
 To make predictions on a set of query cells, you should have two folders: one for the cells you wish to use as prototypes and one for the cells you'd like to make predictions on. Each should contain a count matrix, along with a single column .csv file with annotations for the prototypes, and cell barcodes for the query cells.
 
-To make predictions using the pretrained network using the GPU run:
+To make predictions using the pretrained network with the GPU run:
 
 ```
 python get_preds.py -mp model/mouse_standard.pth -pr path/to/prototypes -qr path/to/queries --cuda
