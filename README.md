@@ -19,9 +19,7 @@ Make sure to follow instructions for installing PyTorch with GPU support if you 
 
 To make predictions on a set of query cells with a pre-trained network, you should have two folders: one for the cells you wish to use for computing prototypes and one for the cells you'd like to make predictions on (queries). Each should contain an unnormalized count matrix of gene expression for each cell. For cells to be used for prototypes, it should contain a .csv file with cell type annotations under the header "annotation". For the query cells, it should contain a .csv file with cell barcodes for the query cells under the header "index". The format for annotations/barcodes is to make it easy to export data from applications that use DataFrame-like formats (Seurat/ScanPy).
 
-To train a new network, you should have one folder with an unnormalized count matrix for cells you wish to use for training and a .csv file with their annotations under the header "annotation". A couple important notes:
--If you wish to make predictions for small cell types, do not provide cells of these types for training--only provide them with the set used for prototypes when making predictions.
--When training and predicting cross-dataset, make sure that the genes are aligned in the respective count matrices as this is not handled yet.
+To train a new network, you should have one folder with an unnormalized count matrix for cells you wish to use for training and a .csv file with their annotations under the header "annotation". If you wish to make predictions for small cell types, do not provide cells of these types for training--only provide them with the set used for prototypes when making predictions. When training and predicting cross-dataset, make sure that the genes are aligned in the respective count matrices as this is not handled yet.
 
 Example commands for training and computing predictions:
 
