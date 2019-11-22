@@ -30,7 +30,7 @@ python train.py --root="path/to/training_data" --file_type="csv" --experiment_ro
 ```
 
 ```
-python get_preds.py --model_path="experiment_root/last_model_1_shot_0.pth" --prototypes="path/to/support" --queries="path/to/queries" --proto_ftype="csv" --query_ftype="csv" --cuda
+python get_preds.py --model_path="experiment_root/last_model_1_shot_0.pth" --prototypes="path/to/support" --queries="path/to/queries" --cuda
 ```
 
 The prediction script outputs a .csv file with barcodes and predicted annotations for each query cell, along with a .csv file containing raw distances to each prototype.
