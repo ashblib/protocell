@@ -68,12 +68,12 @@ def get_parser():
     parser.add_argument('-npmin', '--num_proto_min',
                         type=int,
                         help='Min number of prototypes to train network for',
-                        default=5)
+                        default=1)
 
     parser.add_argument('-npmax', '--num_proto_max',
                         type=int,
                         help='Max number of prototypes to train network for',
-                        default=5)
+                        default=1)
 
     parser.add_argument('-ts', '--test_split',
                         type=int,
